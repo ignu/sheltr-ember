@@ -1,0 +1,12 @@
+outlet
+article#locations
+  h1 Locations
+  ul
+    each location in controller
+      li
+        .location
+          .name
+            link-to 'location' location tagName="span"
+              location.name
+          .address
+            =location.fullAddress

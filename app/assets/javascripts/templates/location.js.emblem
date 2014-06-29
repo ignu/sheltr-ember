@@ -1,0 +1,22 @@
+h1 Location
+a href=model.url
+  = model.name
+
+if model.description
+  h3 Description
+  = model.description
+
+if model.hours
+  h3 Hours
+  .details
+    = model.hours
+
+if model.phone
+  h3 Phone
+  .details
+    = model.phone
+
+if model.eligibility
+  h3 Eligibility
+  .details
+    = model.eligibility
